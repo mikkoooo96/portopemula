@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Css AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #118ab2"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">PortoPemula.com</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section Start -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active" style="height: 100vh;">
+      <img src="asset/img/slide1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
+      <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+        <h1 class="display-3 fw-bold text-shadow text-white">Halo, Saya Bimo</h1>
+        <p class="lead text-shadow text-white">Pelajar yang sedang belajar menjadi Web Developer</p>
+        <a href="#profile" class="btn btn-warning btn-lg mt-3">Lihat Profil</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Hero Section End -->
+
+<style>
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4); /* buat teks lebih terbaca */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+  }
+</style>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section
+      class="profile py-5"
+      id="profile"
+      data-aos="fade-right"
+      style="background-color: #f8f9fa"
+    >
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">
+            My <span style="color: #118ab2">Profile</span>
+          </h2>
+          <p class="text-muted">Kenalan dulu yuk sama saya 😎</p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="asset/img/err.jpeg"
+              alt="Foto Bimo"
+              class="img-fluid rounded-3 shadow-lg"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h3 class="fw-bold mb-3">Bimo Teguh Wicaksono</h3>
+            <p>
+              Saya adalah seorang pelajar yang sedang menekuni dunia
+              <strong>web development</strong>. Saat ini, saya sedang fokus
+              belajar <strong>HTML, CSS, dan JavaScript</strong> untuk membangun
+              portofolio pribadi.
+            </p>
+            <p>
+              Di waktu luang, saya suka ngoding, ngopi, dan terus belajar hal
+              baru di dunia teknologi. Portofolio ini adalah bagian dari
+              perjalanan saya sebagai pemula.
+            </p>
+            <a href="#contact" class="btn btn-outline-primary mt-3"
+              >Hubungi Saya</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project" data-aos="zoom-in">
+      <div class="container-fluid pt-5 pb-4">
+        <div class="container text-center" id="project">
+          <h4>My <span>Bahasa pemograman</span></h4>
+          <p>Ini adalah beberapa bahasa pemograman yang pernah saya pelajari</p>
+          <div class="row pt-4 justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/C++.jpg"
+                  class="card-img-top"
+                  alt="Project 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">C++</h5>
+                  <p class="card-text">
+                    CSS adalah Cascading Style Sheets, sebuah bahasa yang
+                    digunakan untuk menata tampilan elemen-elemen dalam halaman
+                    web yang ditulis menggunakan bahasa markup seperti HTML,
+                    dengan cara mengatur gaya visualnya seperti warna, font,
+                    tata letak, dan spasinya.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #118ab2; color: white"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/jsp.png"
+                  class="card-img-top"
+                  alt="Project 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Javascript</h5>
+                  <p class="card-text">
+                    JavaScript adalah bahasa skrip yang dijalankan langsung oleh
+                    web browser di sisi klien, tanpa perlu dikompilasi terlebih
+                    dahulu.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #118ab2; color: white"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/php.jpeg"
+                  class="card-img-top"
+                  alt="Project 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">PHP</h5>
+                  <p class="card-text">
+                    PHP adalah bahasa script yang dirancang untuk membuat
+                    halaman web dinamis, dengan infrastruktur Object-Oriented
+                    Programming (OOP) yang mempermudah pembuatan aplikasi web
+                    yang kompleks, modular, dan dapat digunakan kembali.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #118ab2; color: white"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/java.png"
+                  class="card-img-top"
+                  alt="Project 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Java</h5>
+                  <p class="card-text">
+                    Menurut para ahli, Java adalah bahasa pemrograman dan
+                    platform yang berorientasi objek, portabel, dan
+                    multiplatform yang dikembangkan oleh Sun Microsystems
+                    (sekarang bagian dari Oracle). Java dirancang untuk "tulis
+                    sekali, jalankan di mana saja"
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #118ab2; color: white"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/phyton.jpeg"
+                  class="card-img-top"
+                  alt="Project 5"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Phyton</h5>
+                  <p class="card-text">
+                    Menurut para ahli dan praktisi, Python adalah bahasa
+                    pemrograman tingkat tinggi yang interpretatif, serbaguna,
+                    dan berfokus pada keterbacaan kode, diciptakan oleh Guido
+                    van Rossum untuk mempermudah pengembangan.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #118ab2; color: white"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="card shadow project-card">
+                <img
+                  src="asset/img/cpng.png"
+                  class="card-img-top"
+                  alt="Project 6"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">C</h5>
+                  <p class="card-text">
+                    Menurut para ahli, Bahasa Pemrograman C adalah bahasa
+                    tingkat menengah yang efisien, portabel, dan fleksibel, yang
+                    diciptakan oleh Dennis Ritchie pada tahun 1972 untuk
+                    pengembangan sistem operasi. Keunggulannya adalah memberikan
+                    kontrol tingkat rendah terhadap perangkat keras, sangat
+                    relevan untuk sistem operasi (seperti Linux), aplikasi
+                    tertanam, dan perangkat berkinerja tinggi seperti dalam
+                    perdagangan frekuensi tinggi, serta menjadi fondasi bagi
+                    banyak bahasa pemrograman modern lainnya
+                  </p>
+                  <a
+                    href="#"
+                    class="btn"
+                    style="background-color: #118ab2; color: white"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+      <div class="container-fluid py-5">
+        <div class="container text-center">
+          <h3 class="display-5">My <span>Skills</span></h3>
+          <p>hidup seperti larry</p>
+          <div class="row pt-3 pb-3">
+            <!-- Skill 1 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-code fa-3x" style="color: #118ab2"></i>
+              <p>Ngoding</p>
+            </div>
+            <!-- Skill 2 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-utensils fa-3x" style="color: #118ab2"></i>
+              <p>Madang</p>
+            </div>
+            <!-- Skill 3 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-bed fa-3x" style="color: #118ab2"></i>
+              <p>Turu</p>
+            </div>
+            <!-- Skill 4 -->
+            <div class="col-md-3 mb-3">
+              <i class="fa-solid fa-mug-hot fa-3x" style="color: #118ab2"></i>
+              <p>Ngopi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-left">
+      <div class="container-fluid py-5" style="background-color: #ffd166">
+        <div class="container pt-2">
+          <h3 class="display-5"><span>My </span>Contact</h3>
+          <p>Contact me</p>
+          <div class="row">
+            <!-- Pesan -->
+            <div class="col-md-6">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Content</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn"
+                style="background-color: #ef476f; color: white"
+              >
+                Kirim
+              </button>
+            </div>
+            <!-- Maps -->
+            <div class="col-md-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2975676220826!2d106.98954167434607!3d-6.35551349363446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c22161d4051%3A0x7a0a35b288779341!2sSMKN%202%20Kota%20Bekasi!5e0!3m2!1sid!2sid!4v1756971779587!5m2!1sid!2sid"
+                width="450"
+                height="350"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div
+        class="footer pt-4 text-center"
+        style="background-color: #073b4c; color: white"
+      >
+        <div class="container">
+          <!-- Icon Sosmed -->
+          <div class="pb-3">
+            <a
+              href="https://www.youtube.com/@BroCodez"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i
+                class="fa-brands fa-youtube fa-2x mx-2"
+                style="color: #ffd166"
+              ></i
+            ></a>
+            <a
+              href="https://id.linkedin.com/jobs/view/full-stack-engineer-at-pt-indosat-tbk-4295135516?trk=public_jobs_topcard-title"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i
+                class="fa-brands fa-linkedin fa-2x mx-2"
+                style="color: #ffd166"
+              ></i
+            ></a>
+            <a
+              href="https://www.facebook.com/groups/lowonganprogrammer/?locale=id_ID"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i
+                class="fa-brands fa-facebook fa-2x mx-2"
+                style="color: #ffd166"
+              ></i
+            ></a>
+            <a
+              href="https://twitter.com/lokerit_01/status/1566791880574058496"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i
+                class="fa-brands fa-twitter fa-2x mx-2"
+                style="color: #ffd166"
+              ></i
+            ></a>
+            <a
+              href="https://www.instagram.com/loker_it/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i
+                class="fa-brands fa-instagram fa-2x mx-2"
+                style="color: #ffd166"
+              ></i
+            ></a>
+            <a
+              href="https://github.com/mikkoooo96//"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-github fa-2x mx-2"
+                style="color: #ffd166"
+              ></i
+            ></a>
+            <a
+              href="https://wa.me/qr/TMLIM3SXB7GCH1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i
+                class="fa-brands fa-whatsapp fa-2x mx-2"
+                style="color: #ffd166"
+              ></i
+            ></a>
+          </div>
+          <!-- CopyRight -->
+          <figure>
+            <blockquote class="blockquote">
+              <p><span>&copy;Web latihan puh.</span></p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Est.
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <svg
+        id="wave"
+        style="transform: rotate(0deg); transition: 0.3s"
+        viewBox="0 0 1440 340"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="#118ab2" offset="0%"></stop>
+            <stop stop-color="#ffd166" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          style="transform: translate(0, 0px); opacity: 1"
+          fill="url(#sw-gradient-0)"
+          d="M0,272L34.3,260.7C68.6,249,137,227,206,181.3C274.3,136,343,68,411,85C480,102,549,204,617,221C685.7,238,754,170,823,170C891.4,170,960,238,1029,238C1097.1,238,1166,170,1234,119C1302.9,68,1371,34,1440,68C1508.6,102,1577,204,1646,232.3C1714.3,261,1783,215,1851,164.3C1920,113,1989,57,2057,62.3C2125.7,68,2194,136,2263,170C2331.4,204,2400,204,2469,215.3C2537.1,227,2606,249,2674,238C2742.9,227,2811,181,2880,170C2948.6,159,3017,181,3086,181.3C3154.3,181,3223,159,3291,170C3360,181,3429,227,3497,209.7C3565.7,193,3634,113,3703,96.3C3771.4,79,3840,125,3909,130.3C3977.1,136,4046,102,4114,107.7C4182.9,113,4251,159,4320,192.7C4388.6,227,4457,249,4526,266.3C4594.3,283,4663,295,4731,255C4800,215,4869,125,4903,79.3L4937.1,34L4937.1,340L4902.9,340C4868.6,340,4800,340,4731,340C4662.9,340,4594,340,4526,340C4457.1,340,4389,340,4320,340C4251.4,340,4183,340,4114,340C4045.7,340,3977,340,3909,340C3840,340,3771,340,3703,340C3634.3,340,3566,340,3497,340C3428.6,340,3360,340,3291,340C3222.9,340,3154,340,3086,340C3017.1,340,2949,340,2880,340C2811.4,340,2743,340,2674,340C2605.7,340,2537,340,2469,340C2400,340,2331,340,2263,340C2194.3,340,2126,340,2057,340C1988.6,340,1920,340,1851,340C1782.9,340,1714,340,1646,340C1577.1,340,1509,340,1440,340C1371.4,340,1303,340,1234,340C1165.7,340,1097,340,1029,340C960,340,891,340,823,340C754.3,340,686,340,617,340C548.6,340,480,340,411,340C342.9,340,274,340,206,340C137.1,340,69,340,34,340L0,340Z"
+        ></path>
+        <defs>
+          <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="#ef476f" offset="0%"></stop>
+            <stop stop-color="#073b4c" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          style="transform: translate(0, 50px); opacity: 0.9"
+          fill="url(#sw-gradient-1)"
+          d="M0,0L34.3,0C68.6,0,137,0,206,51C274.3,102,343,204,411,204C480,204,549,102,617,56.7C685.7,11,754,23,823,51C891.4,79,960,125,1029,170C1097.1,215,1166,261,1234,272C1302.9,283,1371,261,1440,215.3C1508.6,170,1577,102,1646,102C1714.3,102,1783,170,1851,198.3C1920,227,1989,215,2057,204C2125.7,193,2194,181,2263,170C2331.4,159,2400,147,2469,158.7C2537.1,170,2606,204,2674,192.7C2742.9,181,2811,125,2880,130.3C2948.6,136,3017,204,3086,204C3154.3,204,3223,136,3291,130.3C3360,125,3429,181,3497,192.7C3565.7,204,3634,170,3703,130.3C3771.4,91,3840,45,3909,39.7C3977.1,34,4046,68,4114,90.7C4182.9,113,4251,125,4320,124.7C4388.6,125,4457,113,4526,107.7C4594.3,102,4663,102,4731,124.7C4800,147,4869,193,4903,215.3L4937.1,238L4937.1,340L4902.9,340C4868.6,340,4800,340,4731,340C4662.9,340,4594,340,4526,340C4457.1,340,4389,340,4320,340C4251.4,340,4183,340,4114,340C4045.7,340,3977,340,3909,340C3840,340,3771,340,3703,340C3634.3,340,3566,340,3497,340C3428.6,340,3360,340,3291,340C3222.9,340,3154,340,3086,340C3017.1,340,2949,340,2880,340C2811.4,340,2743,340,2674,340C2605.7,340,2537,340,2469,340C2400,340,2331,340,2263,340C2194.3,340,2126,340,2057,340C1988.6,340,1920,340,1851,340C1782.9,340,1714,340,1646,340C1577.1,340,1509,340,1440,340C1371.4,340,1303,340,1234,340C1165.7,340,1097,340,1029,340C960,340,891,340,823,340C754.3,340,686,340,617,340C548.6,340,480,340,411,340C342.9,340,274,340,206,340C137.1,340,69,340,34,340L0,340Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Js AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     
+  </body>
+</html>

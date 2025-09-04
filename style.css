@@ -1,0 +1,18 @@
+.hero {
+    background-image: url("asset/img/bg-1.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 30%;
+    padding-bottom: 30%;
+    color: rgb(247, 19, 3);
+}
+
+.project {
+    background-color: rgb(212, 212, 212);
+}
+
+#profile {
+    background-color: rgb(0, 225, 255);
+}
+.footer {
+    background-color: azure;
+}
